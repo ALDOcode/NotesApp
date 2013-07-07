@@ -26,6 +26,10 @@
             android:name="com.aldov.notesapp.InsertActivity"
             android:label="@string/title_activity_insert" >
         </activity>
+        <activity
+            android:name="com.aldov.notesapp.ViewActivity"
+            android:label="@string/title_activity_view" >
+        </activity>
     </application>
 
 </manifest>

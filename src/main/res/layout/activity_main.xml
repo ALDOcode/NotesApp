@@ -9,11 +9,21 @@
     tools:context=".MainActivity">
 
     <Button
+            android:id="@+id/insertHomeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Insert"
-            android:id="@+id/insertHomeButton"
+            android:layout_marginTop="40dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="57dp"/>
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+
+            android:id="@+id/viewHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/insertHomeButton"
+            android:layout_alignLeft="@+id/insertHomeButton"/>
 </RelativeLayout>

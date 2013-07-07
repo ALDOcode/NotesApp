@@ -26,6 +26,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button b2=(Button)findViewById(R.id.viewHomeButton);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i2 = new Intent(MainActivity.this,ViewActivity.class);
+                startActivity(i2);
+
+            }
+        });
+
 
     }
 
