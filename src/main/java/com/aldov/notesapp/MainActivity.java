@@ -36,6 +36,20 @@ public class MainActivity extends Activity {
             }
         });
 
+        final DatabaseHandler db = new DatabaseHandler(this);
+        Button b3=(Button)findViewById(R.id.deleteHomeButton);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // db.deleteNotes(new Notes(1));
+
+                db.deleteAll();
+
+            }
+        });
+
+
+
 
     }
 

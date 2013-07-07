@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Insert"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="39dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"/>
 
@@ -26,4 +26,14 @@
             android:layout_marginTop="29dp"
             android:layout_below="@+id/insertHomeButton"
             android:layout_alignLeft="@+id/insertHomeButton"/>
+
+    <Button
+
+            android:id="@+id/deleteHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/viewHomeButton"
+            android:layout_alignLeft="@+id/viewHomeButton"/>
 </RelativeLayout>

@@ -73,4 +73,19 @@ public class DatabaseHandler extends SQLiteOpenHelper{
         return notes;
 
     }
+
+    public void deleteNotes(Notes notes) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, ID + " = ?",
+                new String[] { String.valueOf(notes.getID()) });
+        db.close();
+    }
+
+    public void deleteAll(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String deleteSQL = "DELETE FROM " + TABLE_NAME;
+
+        db.execSQL(deleteSQL);
+    }
+
 }

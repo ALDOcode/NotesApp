@@ -20,6 +20,11 @@ public class Notes {
         this.content=_content;
     }
 
+    public Notes(int _id){
+        this.id=_id;
+    }
+
+    
     public int getID(){
         return this.id;
     }
